@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flood Management Dashboard</title>
+    <!-- CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-white transition duration-300 dark:bg-gray-800 dark:text-white">
+    <div class="flex">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="w-64 bg-gray-100 dark:bg-gray-900 h-screen p-4 fixed left-0 top-0 z-20 md:block">
+            <ul class="space-y-6">
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#">Home</a></li>
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#dubai-section">Dubai's Infrastructure</a></li>
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#india-section">India's Challenges</a></li>
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#comparison-section">Comparison</a></li>
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#graphs">Graphs & Data</a></li>
+                <li><a class="nav-link text-gray-700 dark:text-gray-300" href="#extra-section">Extra Section</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6 md:ml-0 ml-64" id="main-content" > <!-- Ensure content is properly aligned -->
+            <!-- Top Navbar with Theme Toggle -->
+             <div id="top-navbar">
+                <nav class="flex justify-between items-center bg-gray-100 dark:bg-gray-900 p-4 rounded-md"  >
+
+                    <h1 class="text-2xl font-bold">"A Comparative Study of Flood Management Approaches: Dubai and India"</h1>
+                    <!-- Theme Switch -->
+                    <label class="flex items-center cursor-pointer">
+                        <span class="mr-2 text-gray-900 dark:text-gray-300"></span>
+                        <input type="checkbox" id="theme-toggle" class="hidden">
+                        
+                    </label>
+                    <!-- Mobile Menu Button -->
+                    
+                </nav>
+             </div>
+            
+
+            <!-- Section for Dubai -->
+            <section id="dubai-section" class="mt-6">
+                <h4>If Dubai Can, Why Not India in 48 Hours?</h4>
+                <h2 class="text-xl font-bold">Dubai's Infrastructure and Flood Management</h2>
+                <p class="mt-2" id="paragraph">Dubai stands as a beacon in modern urban planning and flood management, employing advanced strategies that blend technology, infrastructure, and community preparedness. The city’s approach to flood management is a comprehensive one, addressing both prevention and swift recovery to minimize the impact of flood events on its urban landscape and residents.
+
+                    At the heart of Dubai’s flood management system is its meticulous urban planning. The city has integrated flood risk assessments into its broader urban development plans, ensuring that new constructions are resilient to flooding. This involves stringent regulations on building codes and land use planning that mandate the elevation of structures, the construction of water-resistant buildings, and the strategic placement of green spaces to absorb excess rainfall. Additionally, the city’s infrastructure includes an extensive drainage system designed to handle large volumes of water, preventing urban flooding even during heavy rainstorms.</p>
+                <canvas id="dubai-chart" width="500" height="300" class="mt-4"></canvas>
+            </section>
+
+            <!-- Section for India -->
+            <section id="india-section" class="mt-6">
+                <h2 class="text-xl font-bold">India's Challenges in Flood Management</h2>
+                <p class="mt-2" id="paragraph">India's flood management is a complex issue influenced by both its diverse geography and the rapid pace of urbanization. Geographically, India is prone to flooding due to its extensive river systems, monsoon rains, and low-lying coastal areas. The annual monsoon season, vital for agriculture, also brings about heavy rains that often lead to widespread flooding, particularly in the plains of North India and along the coastal belts.
+                    Furthermore, urban planning in India has not always prioritized flood resilience. The absence of integrated water management policies and the lack of coordination between various governmental agencies have hindered effective flood management efforts. Emergency response systems also face challenges in quickly and efficiently addressing flood-related disasters, often resulting in prolonged periods of disruption and damage.
+
+                    In summary, India's geographical and infrastructure challenges, along with the pressures of rapid urbanization, create a formidable task in flood management. Addressing these issues requires comprehensive planning, investment in resilient infrastructure, and the adoption of advanced technologies for monitoring and forecasting floods. Collaborative efforts between government, community, and international experts are crucial to improving India's flood management capabilities.
+                </p>
+                <canvas id="india-chart" width="500" height="300" class="mt-4"></canvas>
+            </section>
+
+            <!-- Comparison Section -->
+            <section id="comparison-section" class="mt-6">
+                <h2 class="text-xl font-bold">Comparison Between Dubai and India</h2>
+                <p class="mt-2" id="paragraph">Dubai’s proactive approach to flood management is a masterclass in urban planning, leveraging advanced technology, stringent building codes, and efficient emergency response systems. The city’s foresight ensures infrastructure resilience and swift recovery from flood events. By incorporating flood risk assessments into their urban development plans, Dubai has managed to create a robust and responsive flood management framework.
+                        <br>
+                    In contrast, India’s diverse geography presents significant challenges to flood management efforts. The vast and varied landscapes, including extensive river systems, monsoon-dependent regions, and low-lying coastal areas, make it difficult to implement a one-size-fits-all approach. The annual monsoon season, while essential for agriculture, also brings substantial rainfall that frequently leads to flooding. The existing infrastructure, which often comprises outdated and poorly maintained flood control measures, struggles to cope with the volume of water, leading to recurrent flood situations.</p>
+                <canvas id="comparison-chart" width="430" height="300" class="mt-4"></canvas>
+            </section>
+
+            <!-- Graphs Section -->
+            <section id="graphs" class="mt-6">
+                <h2 class="text-xl font-bold">Additional Graphs & Data</h2>
+                <p id="paragraph">
+                    Enhancing the flood management webpage with additional graphs and data will provide a more comprehensive view of the issues and solutions. Here are some suggested graphs and relevant data points:<br>
+                    Data:<br>
+
+                    2000: 5 major flood events<br>
+
+                    2005: 7 major flood events<br>
+
+                    2010: 4 major flood events<br>
+
+                    2015: 8 major flood events<br>
+
+                    2020: 10 major flood events<br>
+
+                    2025: 6 major flood events (projected)<br>
+                </p>
+                <canvas id="graphs-chart" width="430" height="300" class="mt-4"></canvas>
+            </section>
+
+            <!-- Extra Section -->
+            <section id="extra-section" class="mt-6">
+                <h2 class="text-xl font-bold">Extra Section</h2><br>
+                <p ><mark>
+                    Extra Section: Enhancing Community Preparedness for Flood Management
+                    In addition to robust infrastructure and advanced technology, effective flood management hinges on community preparedness. Educating and engaging the public are critical to mitigating the impact of floods and ensuring swift recovery.<br>
+                    <br>
+                    Community Education and Awareness: Public awareness campaigns play a crucial role in flood preparedness. These campaigns can inform residents about the risks of flooding, the importance of insurance, and steps to take before, during, and after a flood. Educational programs in schools can instill a culture of preparedness from a young age. Community workshops and training sessions can equip citizens with practical skills, such as how to create emergency kits, develop family evacuation plans, and understand flood warnings.<br><br>
+                    
+                    Early Warning Systems and Communication: Timely and accurate communication is essential during flood events. Implementing reliable early warning systems that utilize multiple channels—such as SMS alerts, social media, radio, and community noticeboards—ensures that residents receive timely updates. Local authorities can partner with community leaders to disseminate information effectively, especially in remote or underserved areas.<br>
+                    <br>
+                    Volunteer Networks and Response Teams: Establishing volunteer networks and response teams within communities can significantly enhance disaster response efforts. Trained volunteers can assist with evacuations, distribute relief supplies, and provide first aid. These networks can also support long-term recovery efforts by helping with cleanup, repairs, and rebuilding.<br>
+                    </p>
+
+                    <canvas id="extra-chart" width="430" height="300" class="mt-4"></canvas>
+            </section>
+
+            <!-- Footer -->
+            <footer class="mt-4 p-0 bg-gray-200 dark:bg-gray-700 text-center">
+                <p class="text-gray-600 dark:text-gray-300" style="text-align: center;">© 2024 Flood Management System. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="javasc.js"></script>
+</body>
+</html>

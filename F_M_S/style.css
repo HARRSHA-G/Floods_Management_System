@@ -1,0 +1,190 @@
+body {
+    font-family: Roboto,Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #f8f9fa, #fff);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  ::selection {
+    background: #57cbdc; /* black background */
+  }
+
+  p {
+    text-align: justify;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+
+  h4 {
+    font-family: Playfair Display, serif;
+    font-size: 3.1rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-family: Playfair Display, serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 3.0rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+
+/* Add a gold border to the top nav bar */
+#top-navbar {
+    border: 3px solid #ffd700; /* Add a gold border */
+    border-radius: 10px;
+  }
+  
+  /* Sidebar */
+#sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: block;
+  }
+  
+  #sidebar .nav-link {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 10px;  
+  }
+  
+  #sidebar .nav-link:hover {
+    background-color: #166ac4;
+    color: white;
+  }
+ 
+
+  #main-content {
+    padding: 20px;
+    margin-left: 0; /* Ensure content is visible in all devices */
+  }
+  
+  #pie-chart {
+    width: 400px !important;
+    height: 300px !important;
+  }
+  
+  canvas {
+    display: block;
+    margin: 0 auto;
+    margin: 25px;
+  }
+
+  canvas {
+    display: block;
+    margin: auto; /* sets top, right, bottom, and left margins to auto */
+    position: relative; /* sets the position to absolute */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* sets the graph to take up the full height and width of the container */
+  }
+  
+  
+  /* Footer */
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #sidebar {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #main-content {
+    transition: background-color 0.3s, color 0.3s;
+  }  
+
+  #paragraph {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 13; /* Show 13 lines of text */
+    -webkit-box-orient: vertical;
+  }
+  
+  #read-more {
+    cursor: pointer;
+    color: #337ab7;
+    text-decoration: underline;
+  }
+  
+  #read-more:hover {
+    color: #23527c;
+  }      
+
+  /* Hide sidebar and reset margin on screens less than 700px wide */
+@media only screen and (max-width: 699px) {
+    #sidebar {
+      display: none;
+    }
+    #main-content {
+      margin-left: 0; /* Reset margin when navbar is hidden */
+    }
+  }
+  
+  /* Hide sidebar and reset margin on screens less than 600px wide */
+  @media only screen and (max-width: 599px) {
+    #sidebar {
+      display: none;
+    }
+    #main-content {
+      margin-left: 0; /* Reset margin when navbar is hidden */
+    }
+  }
+  
+  /* Show sidebar and maintain margin on screens 600px wide and above */
+  @media only screen and (min-width: 600px) {
+    #sidebar {
+      display: block;
+    }
+    #main-content {
+      margin-left: 256px; /* Add margin to create space for navbar */
+    }
+  }
+  
+  /* Show sidebar and maintain margin on screens 700px wide and above */
+  @media only screen and (min-width: 700px) {
+    #sidebar {
+      display: block;
+    }
+    #main-content {
+      margin-left: 256px; /* Add margin to create space for navbar */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h4 {
+      font-size: 2rem; /* Reduce font size to 2rem on mobile devices */
+    }
+  }
